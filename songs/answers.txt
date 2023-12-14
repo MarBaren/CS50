@@ -1,0 +1,3 @@
+I will look at the average of energy, valence and danceability. Then I will look wich names of the numbers are closeset too that average.
+Then it's possible to look up the moods corresponding to the numbers that were close too the average.
+Next I will store the moods in a db and then I will check wich mood is most common.
