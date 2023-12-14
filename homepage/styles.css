@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+}
+
+
+/*Navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: indianred; color: white;}
+
+ul.topnav li a.active {color: indianred; font-family: 'Monoton', sans-serif; font-size: 25px;}
+
+ul.topnav li.right {float: right;}
+
+
+/* Tekst lettertype*/
+.monotonTitel {
+    font-family: 'Monoton', sans-serif;
+    color: indianred
+}
+
+.monoton {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+}
+
+.monotonKopje{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+}
+
+/*Hide text*/
+.hidden{
+    visibility: hidden;
+}
+
+/* Homepage */
+.column.left {
+    float: left;
+    width: 60%;
+}
+
+.column.right {
+    text-align: center;
+    width: 40%;
+}
+
+.column.secondLeft {
+    float: left;
+    width: 50%;
+}
+
+.column.secondRight {
+    text-align: center;
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+  .column.left, .column.right, .column.secondLeft, .column.secondRight, .column.left1, .column.leftmiddle1, .column.rightmiddle1, .column.right1 {
+    width: 100%;
+  }
+}

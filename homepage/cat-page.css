@@ -1,0 +1,50 @@
+/* Cat page*/
+.column.left1 {
+    float: center;
+    width: 10%;
+}
+
+.column.leftmiddle1 {
+    text-align: center;
+    width: 40%;
+}
+
+.column.rightmiddle1 {
+    text-align: center;
+    width: 40%;
+}
+
+.column.right1 {
+    text-align: center;
+    width: 10%;
+}
+
+
+
+/*Corners*/
+.corner25 {
+    border-radius: 25px;
+}
+
+/*Afbeelding vergroten*/
+
+.enlarge {
+    transition: transform .2s;
+    margin:0 auto;
+}
+
+.enlarge img:hover{
+    transform:scale(1.03);
+}
+
+
+/*Text*/
+.monotonTitelPip {
+    font-family: 'Monoton', sans-serif;
+    color: indianred
+}
+
+.monotonTitelAbu {
+    font-family: 'Monoton', sans-serif;
+    color: indianred
+}
