@@ -1,0 +1,54 @@
+vragen voor hoogte
+Als de hoogte minder dan 1 is of groter dan 8 ga dan 1 stap terug (loop)
+Herhaal dit van 1 tot de hoogte
+    voor herhaling /.print / # en dan nieuwe regel
+
+ int cents;
+    do
+    {
+        cents = get_int("Enter cents owed: ");
+    }
+    while (cents < 0);
+    return cents;
+
+
+    {
+        int quarter = 25;
+        int r = cents / quarter;
+        while(r > 0)
+        {
+            return r;
+        }
+        return 0;
+    }
+
+
+    {
+        int dime = 10;
+        int r = cents / dime;
+        while(r > 0)
+        {
+            return r;
+        }
+        return 0;
+    }
+
+
+    {
+        int nickel = 5;
+        int r = cents / nickel;
+        {
+            return r;
+        }
+        return 0;
+    }
+
+
+    {
+        int pennie = 1;
+        int r = cents / nickel;
+        {
+            return r;
+        }
+        return 0;
+    }
