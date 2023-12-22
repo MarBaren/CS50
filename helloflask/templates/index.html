@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/" method="post">
+        Who is your favorite character from Harry Potter?
+        <select name="character">
+            <option disabled selected>characters</option>
+            {% for character in CHARACTERS %}
+                <option value="{{ character }}">{{ character }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
