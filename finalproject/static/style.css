@@ -1,0 +1,281 @@
+body {
+  margin:0;
+  background-color: hsl(216,60%,70%);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(0,100%,86%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a img {
+    margin-top: 7px;
+  }
+
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 60px;
+    line-height: 32px;
+  }
+
+  li a:hover:not(.active) {
+    background-color: hsl(216,60%,70%);
+    color: white;
+  }
+
+  .active {
+    background-color: hsl(216,60%,70%);
+  }
+
+  main {
+    margin-top: 180px;
+  }
+
+  .margin7 {
+    margin: 0 7px;
+  }
+
+  .flex-container-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-bottom: 150px;
+  }
+
+  .feeling {
+    background: snow;
+    color: black;
+    height: 150px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+  input {
+    background-color: snow;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid snow;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 12px;
+  }
+
+  input:focus {
+    border: 2px solid #555;
+  }
+
+  .flexbox-container-space {
+    height: 40px;
+    flex-wrap: wrap;
+  }
+
+  .flex-container-loginButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: auto;
+  }
+
+  .buttonLogin {
+    position: absolute;
+    background-color: snow;
+    padding: 12px 50px;
+    border-radius: 12px;
+    border: 2px solid snow;
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .buttonLogin:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .flex-container-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    list-style: none;
+    gap: 300px;
+  }
+
+  .felx-container-steppers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  a:link {
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+
+
+  .fontInconsolataTitle {
+    font-family: 'Inconsolata', monospace;
+    color: snow;
+    font-size: 53px;
+    text-align: center;
+  }
+
+  .fontweight {
+    font-weight: 600;
+  }
+
+  .fontInconsolataTitleBlack {
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .fontInconsolata200 {
+    font-family: 'Inconsolata', monospace;
+    color: snow;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 200;
+  }
+
+  .fontInconsolata200black {
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 200;
+  }
+
+  .fontInconsolata200vet {
+    font-family: 'Inconsolata', monospace;
+    color: snow;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+  }
+
+
+
+  .imgstress {
+    width: 1100px;
+    height: 450px;
+    border-radius: 12px;
+    object-position: 100% 20%;
+    object-fit: cover;
+  }
+
+  .smallLinkImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    object-position: 60% 50%;
+    object-fit: cover;
+    margin-top: 30px;
+  }
+
+  .smallLinkImg:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .imgstress:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .center-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+  .undercenter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+
+
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="flex-container-login">
+        <div class="text">
+            <h3 class="fontInconsolataTitle">What is PELVIS</h3>
+            <h8 class= "fontInconsolata200">Stay up to date on new research <br> about pelvic floor muscle tension <br> and track your progress</h8>
+        </div>
+        <div class="feeling">
+            <h3 class="fontInconsolataTitleBlack">How are you feeling today?</h3>
+            <br>
+            {% for _ in range(5) %}
+                <img class="margin7" src="../static/Leeghartje.png" alt="emptyhart">
+            {% endfor %}
+        </div>
+    </div>
+    <div class="image-container">
+        <a href="#information"><img class="imgstress" src="../static/stressbackground.png" alt="stressbackground"></a>
+        <h3 class="fontInconsolataTitle center-text fontweight">Stress</h3>
+        <h9 class="fontInconsolata200 undercenter-text">What does stress have to do with pelvic floor muscle tension?<br>What is Stress?</h9>
+    </div>
+    <div class="image-container">
+        <div>
+            <a href="#information"><img class="smallLinkImg" src="../static/yogaimg.png" alt="yogaimg"></a>
+            <h3 class="fontInconsolataTitle center-text fontweight">Yoga</h3>
+        </div>
+    </div>
+{% endblock %}
