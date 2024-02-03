@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <select class="mb-3" name="symbol">
+            {% for stock in stocks %}
+                {% if stock.total_shares > 0 %}
+                    <option value={{stock.symbol}} autofocus class="form-control mx-auto w-auto" id="symbol">{{stock.symbol}}</option>
+                {% endif %}
+            {% endfor %}
+            </select>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}

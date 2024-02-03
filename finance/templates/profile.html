@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    {% for result in result %}
+        <div class="mb-3">
+            <h3> Hi, {{ result.username }}! </h3>
+        </div>
+        <a href="/changepassword">
+            <button class="btn btn-primary">change Password</button>
+        </a>
+    {% endfor %}
+
+{% endblock %}
