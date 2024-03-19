@@ -1,0 +1,1025 @@
+  body {
+      margin: 0;
+      background-color: hsl(216, 60%, 70%);
+  }
+
+  .body1 {
+      background-image: url('../static/landscape.jpg');
+      z-index: 1;
+  }
+
+  .body2 {
+      background-attachment: fixed;
+      background-image: url('../static/landscape3.jpg');
+      background-size: 110%;
+      background-position: center top;
+      z-index: 1;
+  }
+
+  .body3 {
+      background-attachment: fixed;
+      background-image: url('../static/landscape.jpg');
+      background-size: 110%;
+      background-position: center top;
+      z-index: 1;
+  }
+
+  .body4 {
+      background-attachment: fixed;
+      background-image: url('../static/landscape4.jpg');
+      background-size: 140%;
+      background-position: 100% 1%;
+      z-index: 1;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: hsl(0, 100%, 86%);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 100;
+  }
+
+  @media screen and (max-width: 768px) {
+
+      .body2,
+      .body3,
+      .body4 {
+          background-color: hsl(216, 60%, 70%);
+          background-image: none;
+      }
+  }
+
+  ul li {
+      float: left;
+  }
+
+  ul li.right {
+      float: right;
+  }
+
+  ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      height: 60px;
+      line-height: 32px;
+  }
+
+  ul li a:hover:not(.active) {
+      background-color: hsl(216, 60%, 70%);
+      color: white;
+  }
+
+  ul li.right {
+      float: right;
+  }
+
+  @media screen and (max-width: 800px) {
+      ul {
+          width: 100%;
+          height: auto;
+          position: relative;
+      }
+
+      ul li a {
+          float: left;
+          padding: 15px;
+      }
+
+  }
+
+  @media screen and (max-width: 400px) {
+      ul li a {
+          text-align: center;
+          float: none;
+      }
+  }
+
+  .active {
+      background-color: hsl(216, 60%, 70%);
+  }
+
+  .active:hover {
+      color: hsl(0, 100%, 86%);
+  }
+
+  li a img {
+      margin-top: 7px;
+  }
+
+  main {
+      margin-top: 100px;
+  }
+
+  .margin7 {
+      margin: 0 7px;
+  }
+
+  .marginhart {
+      margin-left: 7.5%;
+      margin-right: 5%;
+  }
+
+  .emotionhart1 {
+      width: 53px;
+      transform: rotate(10deg);
+      margin-right: 14px;
+  }
+
+  .emotionhart2 {
+      width: 53px;
+      transform: rotate(-3deg);
+      margin-right: 14px;
+  }
+
+  .emotionhart3 {
+      width: 53px;
+      transform: rotate(15deg);
+      margin-right: 14px;
+  }
+
+  .emotionhart-container {
+      position: absolute;
+      margin-left: 34px;
+  }
+
+  .feeling {
+      background: snow;
+      color: black;
+      height: 200px;
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  input {
+      background-color: snow;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid snow;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+      border-radius: 12px;
+  }
+
+  input:focus {
+      border: 2px solid #555;
+  }
+
+  @media screen and (max-width: 768px) {
+      .marginhart {
+          margin-left: 2%;
+          margin-right: 1%;
+      }
+
+      .emotionhart-container {
+          position: absolute;
+          margin-left: 10px;
+      }
+  }
+
+
+  /* Flexboxes */
+  .flex-container-login {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 150px;
+      margin-bottom: 150px;
+  }
+
+  .flexbox-container-space {
+      height: 119px;
+      flex-wrap: wrap;
+  }
+
+  .flex-container-loginButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .flex-container-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'Inconsolata', monospace;
+      font-size: 15px;
+      font-weight: 600;
+      list-style: none;
+      gap: 300px;
+  }
+
+  .felx-container-steppers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .flex-container-index {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 150px;
+      margin-bottom: 60px;
+  }
+
+  .profileinfo-container {
+      height: 290px;
+      width: 500px;
+      gap: 30px;
+      background-color: snow;
+      border-radius: 12px;
+      color: black;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  .specialistsinfo-container {
+      height: 220px;
+      width: 700px;
+      gap: 30px;
+      background-color: hsl(216, 60%, 70%);
+      border-radius: 12px;
+      color: snow;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  @media only screen and (max-width: 900px) {
+      .article-container {
+          height: 1000px;
+          width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: snow;
+          border-radius: 12px;
+          color: snow;
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+
+  }
+
+  @media screen and (max-width: 768px) {
+      .specialistsinfo-container {
+          height: 360px;
+          width: 300px;
+      }
+
+      .article-container {
+          height: 1000px;
+          width: 370px !important;
+      }
+  }
+
+  .flexbox {
+      display: flex;
+      height: 50px;
+  }
+
+  .flex-end {
+      margin-left: auto;
+      margin-right: 35px;
+  }
+
+  .flexbox2 {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 35px;
+      margin-bottom: 50px;
+      gap: 10px;
+  }
+
+  /* End | Flexboxes */
+
+
+
+
+  /* Buttons */
+  .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: auto;
+  }
+
+  /* Buttons | Change */
+  .buttonschange {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-end;
+      justify-content: center;
+      flex-shrink: 0;
+      width: auto;
+  }
+
+  .buttonchange {
+      background-color: hsl(0, 100%, 86%);
+      padding: 10px 30px;
+      border-radius: 12px;
+      border: 2px hsl(0, 100%, 86%);
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .buttonchange.bottommargin {
+      margin-bottom: 15px;
+  }
+
+  .buttonChangePassword {
+      position: absolute;
+      background-color: hsl(0, 100%, 86%);
+      padding: 12px 50px;
+      border-radius: 12px;
+      border: 2px hsl(0, 100%, 86%);
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .buttonchange:hover,
+  .buttonChangePassword:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Buttons | Login */
+  .buttonLogin {
+      position: absolute;
+      background-color: snow;
+      padding: 12px 50px;
+      border-radius: 12px;
+      border: 2px solid snow;
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 70px;
+  }
+
+  .buttonLogin:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* End | Buttons */
+
+
+
+  .changeprofilepic {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 440px;
+      background-color: snow;
+      color: black;
+      opacity: 1;
+      display: none;
+      transition: 0.6s;
+      z-index: 101;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      font-family: 'Inconsolata', monospace;
+      font-weight: 200;
+      font-size: 18px;
+      border-radius: 12px;
+  }
+
+  .inputchangeprofile {
+      margin-left: 4%;
+      margin-right: 4%;
+  }
+
+
+  /* Link | Register and Login */
+  a:link {
+      text-decoration: none;
+      list-style: none;
+  }
+
+  .other-link {
+      color: hsl(216, 60%, 85%);
+  }
+
+  .other-link:hover {
+      color: snow;
+  }
+
+  .current-link {
+      color: snow;
+  }
+
+  .current-link:hover {
+      color: snow;
+  }
+
+  .flexbox-currentlink-right {
+      background-color: hsl(0, 100%, 86%);
+      height: 2px;
+      width: 48%;
+      margin-left: auto;
+  }
+
+  .flexbox-currentlink-left {
+      background-color: hsl(0, 100%, 86%);
+      height: 2px;
+      width: 50%;
+  }
+
+  /* End | Link | Register and Login */
+
+
+
+
+  /* Text */
+  .profileinfotext {
+      text-align: left;
+      margin-left: 35px;
+      margin-top: 20px;
+  }
+
+  .fontInconsolataTitleBigger {
+      font-family: 'Inconsolata', monospace;
+      color: snow;
+      font-size: 350%;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px dimgray;
+  }
+
+  .fontInconsolataTitle {
+      font-family: 'Inconsolata', monospace;
+      color: snow;
+      font-size: 40px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px dimgray;
+  }
+
+  .fontweight {
+      font-weight: 600;
+  }
+
+  .fontInconsolataTitleBlack {
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 30px;
+  }
+
+  .fontInconsolata200 {
+      font-family: 'Inconsolata', monospace;
+      color: snow;
+      font-size: 18px;
+      text-align: center;
+      display: inline-block;
+      font-weight: 200;
+  }
+
+  .fontInconsolata200black {
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 18px;
+      text-align: center;
+      display: inline-block;
+      font-weight: 200;
+  }
+
+  .fontInconsolata200vet {
+      font-family: 'Inconsolata', monospace;
+      color: snow;
+      font-size: 18px;
+      text-align: center;
+      display: inline-block;
+      font-weight: 500;
+  }
+
+  .holtwood-one {
+      font-family: "Holtwood One SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+  }
+
+  .text {
+      text-align: center;
+  }
+
+  .text2 {
+      text-align: center;
+      width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+  }
+
+  .textVideo {
+      text-align: center;
+      position: absolute;
+      width: 400px;
+      margin-top: 280px;
+      margin-bottom: 80px;
+  }
+
+  .center-text {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+
+  .undercenter-text {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
+  }
+
+  .imgtext {
+      margin-top: 40px;
+      font-size: 300%;
+      text-shadow: 2px 2px 4px dimgray;
+  }
+
+  .imgtext2 {
+      margin-top: 50px;
+      font-size: 35px;
+      text-shadow: 2px 2px 4px dimgray;
+  }
+
+  @media screen and (max-width: 768px) {
+      .imgtext {
+          font-size: 150%;
+          margin-top: 5px;
+      }
+
+      .undercenter-text {
+          font-size: 80%;
+          top: 62%;
+      }
+
+      .marginTop {
+          margin-top: -80px;
+      }
+
+      .textVideo {
+          margin-top: 235px;
+          margin-bottom: 80px;
+      }
+
+      .fontInconsolata200 {
+          font-size: 14px;
+      }
+
+      .text2 {
+          width: 260px;
+      }
+  }
+
+  /* End | Text */
+
+
+
+
+  /* Symbols */
+
+  .play {
+      margin-top: 120px;
+      position: absolute;
+      margin-left: 170px;
+      z-index: 2;
+  }
+
+  .iconcollorpink {
+      color: hsl(0, 100%, 86%);
+  }
+
+  .iconMarginTopRight {
+      margin-top: 3px;
+      margin-right: 9px;
+  }
+
+  .favoriteVideo {
+      position: absolute;
+      margin-left: 340px;
+      margin-top: 35px;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 5;
+  }
+
+  .favorite {
+      position: absolute;
+      margin-left: 86%;
+      margin-top: 20px;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      flex-wrap: wrap;
+      transition: 0.3s;
+      z-index: 5;
+  }
+
+  .favorite2 {
+      position: absolute;
+      margin-left: 86%;
+      margin-top: 50px;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 5;
+  }
+
+  @media only screen and (min-width: 1410px) {
+      .favorite {
+          position: absolute;
+          margin-top: 20px;
+          margin-left: 1180px;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          flex-wrap: wrap;
+          transition: 0.3s;
+          z-index: 5;
+      }
+
+      .favorite2 {
+          position: absolute;
+          margin-left: 1180px;
+          margin-top: 50px;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          flex-wrap: wrap;
+          transition: 0.3s;
+          z-index: 5;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+      .favorite {
+          margin-left: 65%;
+      }
+
+      .favorite2 {
+          margin-left: 65%;
+      }
+
+      .favoriteVideo {
+          margin-left: 300px;
+          margin-top: 35px;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+      }
+  }
+
+  /* End | Symbols */
+
+
+
+
+  /* Images */
+  .imgstress {
+      width: 91%;
+      height: 450px;
+      border-radius: 12px;
+      object-position: 100% 20%;
+      object-fit: cover;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+  }
+
+  .infoLinkImg {
+      background-size: cover;
+      width: 91%;
+      height: 450px;
+      object-position: 100% 20%;
+      border-radius: 12px;
+      position: relative;
+      background-position: center;
+      object-fit: cover;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+      margin-bottom: 25px;
+  }
+
+  @media only screen and (min-width: 1420px) {
+      .imgstress {
+          width: 1100px;
+          height: 450px;
+          border-radius: 12px;
+          object-position: 100% 20%;
+          object-fit: cover;
+          flex-wrap: wrap;
+          z-index: 1;
+      }
+
+      .infoLinkImg {
+          background-size: cover;
+          width: 1255px;
+          height: 450px;
+          object-position: 50% 50%;
+          border-radius: 12px;
+          position: relative;
+          background-position: center;
+          z-index: 1;
+      }
+
+      .smallLinkImg {
+          background-size: cover;
+          max-width: 296px;
+          max-height: 296px;
+          object-position: 100% 50%;
+          border-radius: 12px;
+          position: relative;
+          margin-top: 60px;
+          background-position: center;
+          z-index: 1;
+      }
+  }
+
+  .smallLinkImg {
+      background-size: cover;
+      width: 296px;
+      height: 296px;
+      object-position: 100% 50%;
+      border-radius: 12px;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+      background-position: center;
+      z-index: 1;
+  }
+
+  .videoLinkImg {
+      width: 400px;
+      height: 256px;
+      object-position: 50% 50%;
+      border-radius: 12px;
+      position: relative;
+      background-position: center;
+      object-fit: cover;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      filter: brightness(1);
+      margin-top: 20px;
+  }
+
+  .videoLinkImg:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.50), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+      filter: brightness(0.5);
+      transition: .5s ease;
+  }
+
+  .smallLinkImg1 {
+      background-size: cover;
+      width: 256px;
+      height: 256px;
+      object-position: 100% 50%;
+      border-radius: 12px;
+      position: relative;
+      background-position: center;
+      z-index: 1;
+  }
+
+  .backgroundYoga {
+      background-image: url('../static/yogaimg.jpeg');
+  }
+
+  .backgroundYoga1 {
+      background-image: url('../static/yoga1.png');
+  }
+
+  .backgroundBreathing {
+      background-image: url('../static/breathingimg.jpg');
+      background-position: 100% 80%;
+  }
+
+  .backgroundMeditation {
+      background-image: url('../static/meditationimg.jpg');
+  }
+
+  .backgroundFysio {
+      background-image: url('../static/fysioexcercise.jpg');
+  }
+
+  .backgroundProfilePic {
+      background-image: url("../static/blank-profile-picture.png");
+  }
+
+  .backgroundStress {
+      background-image: url("../static/landscape3.jpg");
+      background-position: 45% 15%;
+  }
+
+  .backgroundPelvic {
+      background-image: url('../static/landscape.jpg');
+      margin-top: 30px;
+  }
+
+  .backgroundWoman {
+      background-image: url("../static/women1.jpg");
+      margin-top: 30px;
+  }
+
+  .smallLinkImg:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .imgstress:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .infoLinkImg:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .image-container {
+      position: relative;
+      display: block;
+      flex-wrap: wrap;
+  }
+
+  .image-container-profilepicture {
+      position: relative;
+      display: block;
+      flex-wrap: wrap;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .inline-image-container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+  }
+
+  .inline-image-container1 {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 100px;
+  }
+
+  .information-image-container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .infoFavoMargin {
+      margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .infoLinkImg {
+          height: 296px;
+          width: 296px;
+      }
+
+      .videoLinkImg {
+          width: 350px;
+          height: 206px;
+          margin-bottom: 30px;
+      }
+
+      .video {
+          margin-top: -80px;
+          width: 91%;
+          height: 216px !important;
+      }
+  }
+
+  /* End | Images */
+
+
+  /* Video */
+  .video {
+      width: 91%;
+      height: 500px;
+      border-radius: 12px;
+      object-position: 100% 20%;
+      object-fit: cover;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+  }
+
+  @media only screen and (min-width: 1100px) {
+      .video {
+          width: 1000px;
+          height: 563px;
+          border-radius: 12px;
+          object-position: 100% 20%;
+          object-fit: cover;
+          flex-wrap: wrap;
+          z-index: 1;
+      }
+
+
+
+      /* Alert | Alert box */
+      .alert {
+          position: fixed;
+          top: 15%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 700px;
+          background-color: snow;
+          color: black;
+          opacity: 1;
+          transition: 0.6s;
+          z-index: 101;
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          font-family: 'Inconsolata', monospace;
+          font-weight: 200;
+          font-size: 18px;
+          border-radius: 12px;
+      }
+
+      /* Alert | The close button */
+      .closebtn {
+          margin-left: 15px;
+          color: black;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      .closebtn2 {
+          margin-left: auto;
+          margin-right: 2%;
+          color: black;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      /* Alert | When moving the mouse over the close button */
+      .closebtn:hover {
+          color: hsl(216, 60%, 70%);
+      }
+
+      .closebtn2:hover {
+          color: hsl(216, 60%, 70%);
+      }
+
+      /* End | Alert */

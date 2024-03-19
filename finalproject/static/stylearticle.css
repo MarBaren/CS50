@@ -1,0 +1,155 @@
+  .article-container {
+      height: 100%;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: snow;
+      border-radius: 12px;
+      color: snow;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .textcontainer {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+
+  .textcontainerin {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+  }
+
+  .textabovecontainer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+
+  .abovetextcontainerleft {
+      flex-wrap: wrap;
+      margin-left: 7%;
+      text-align: left;
+  }
+
+  .abovetextcontainerright {
+      flex-wrap: wrap;
+      margin-right: 7%;
+      margin-left: auto;
+      text-align: right;
+  }
+
+  .intextcontainerLeft {
+      flex-wrap: wrap;
+      width: 45%;
+      margin-left: 7%;
+      text-align: left;
+      line-height: 1.2;
+  }
+
+  .intextcontainerRight {
+      flex-wrap: wrap;
+      width: 55%;
+      margin-right: 7%;
+      text-align: left;
+      line-height: 1.2;
+  }
+
+  .singletextcontainer {
+      flex-wrap: wrap;
+      margin-right: 7%;
+      margin-left: 7%;
+      text-align: left;
+      line-height: 1.2;
+  }
+
+  .space {
+      height: 50px;
+  }
+
+  .flexbox-first-line-article {
+      background-color: black;
+      position: relative;
+      height: 2px;
+      width: 87%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+  }
+
+  .flexbox-second-line-article {
+      background-color: black;
+      height: 2px;
+      width: 87%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 18px;
+  }
+
+  .domine-articleTitle {
+      font-family: "Domine", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 55px;
+      color: black;
+  }
+
+  .domine-articleUnderTitle {
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-size: 35px;
+      font-style: normal;
+      color: black;
+  }
+
+  .fontInconsolata200blacksmall {
+      font-family: 'Inconsolata', monospace;
+      color: black;
+      font-size: 13px;
+      text-align: center;
+      font-weight: 200;
+      text-align: left;
+  }
+
+  .fontInconsolata200blacksmall.kop {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 5px;
+  }
+
+  .imgArticleStress {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .imgArticleStories {
+      flex-wrap: wrap;
+      width: 100%;
+      height: 330px;
+      margin-bottom: 30px;
+      object-position: 100% 50%;
+      object-fit: cover;
+      justify-content: center;
+  }
+
+  .marginTopArticle {
+      margin-top: 10px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+      .fontInconsolata200blacksmall {
+          font-size: 7px;
+      }
+
+      .domine-articleTitle {
+          font-size: 25px;
+      }
+
+      .domine-articleUnderTitle {
+          font-size: 15px;
+      }
+  }
