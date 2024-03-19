@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="flex-container-index marginTop">
+        <div class="text">
+            <h3 class="fontInconsolataTitleBigger">What is PELVIS</h3>
+            <h8 class="fontInconsolata200">Stay up to date on new research <br> about pelvic floor muscle tension <br> and track your progress</h8>
+        </div>
+        <div class="feeling marginTop">
+            <h3 class="fontInconsolataTitleBlack">How are you feeling today?</h3>
+            <br>
+            <div class="emotionhart-container">
+                <img class="emotionhart1" src="../static/harthappy.png" alt="hart">
+                <img class="emotionhart2" src="../static/hartsad.png" alt="hart">
+                <img class="emotionhart3" src="../static/hartcontent.png" alt="hart">
+            </div>
+
+            <div class="marginhart">
+                {% for _ in range(5) %}
+                    <img class="margin7" src="../static/Leeghartje.png" alt="emptyhart">
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+    <a href="/article/article1">
+        <div class="information-image-container">
+            <div class="infoLinkImg backgroundStress">
+                <h3 class="fontInconsolataTitleBigger center-text imgtext">Stress</h3>
+                <h9 class="fontInconsolata200 undercenter-text">What does stress have to do with pelvic floor muscle tension?<br>What is Stress?</h9>
+            </div>
+        </div>
+    </a>
+    <div class="inline-image-container">
+        <a href="/exerciselink/yoga" class="smallLinkImg backgroundYoga">
+            <h3 class="fontInconsolataTitleBigger center-text imgtext2">Yoga</h3>
+        </a>
+        <a href="/exerciselink/breathing" class="smallLinkImg backgroundBreathing">
+            <h3 class="fontInconsolataTitleBigger center-text imgtext2">Breathing</h3>
+        </a>
+        <a href="/exerciselink/meditation" class="smallLinkImg backgroundMeditation">
+            <h3 class="fontInconsolataTitleBigger center-text imgtext2">Meditation</h3>
+        </a>
+        <a href="/exerciselink/fysio" class="smallLinkImg backgroundFysio">
+            <h3 class="fontInconsolataTitleBigger center-text imgtext2">fysio</h3>
+        </a>
+    </div>
+{% endblock %}

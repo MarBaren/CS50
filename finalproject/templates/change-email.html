@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Email
+{% endblock %}
+
+{% block main %}
+    <div class="flex-container-loginButton">
+        <form action="/change-email" method="post">
+            <div>
+                <input autocomplete="off" autofocus id="oldemail" name="oldemail" placeholder="Old email" type="text">
+            </div>
+            <div>
+                <input id="newemail" name="newemail" placeholder="New email" type="text">
+            </div>
+            <div>
+                <input id="confirmation" name="confirmation" placeholder="Repeat new email" type="text">
+            </div>
+            <div class="buttons">
+                <button class="buttonLogin" type="submit">Change Email</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

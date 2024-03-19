@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <div class="text infoFavoMargin">
+        <h3 class="fontInconsolataTitleBigger marginTop">Articles</h3>
+    </div>
+    <div class="inline-image-container">
+        <div class="favorite">
+            {% if "info-stress" in favorite_words %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-stress" name="info-stress" value="info-stress" data-fill="1" data-word="info-stress" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% else %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-stress" name="info-stress" data-fill="0" data-word="info-stress" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+    <a href="/article/article1">
+        <div class="information-image-container">
+            <div class="infoLinkImg backgroundStress">
+                <h3 class="fontInconsolataTitleBigger center-text imgtext">Stress</h3>
+                <h9 class="fontInconsolata200 undercenter-text">What does stress have to do with pelvic floor muscle tension?<br>What is Stress?</h9>
+            </div>
+        </div>
+    </a>
+
+    <div class="inline-image-container">
+        <div class="favorite2">
+            {% if "info-pelvic" in favorite_words %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-pelvic" name="info-pelvic" value="info-pelvic" data-fill="1" data-word="info-pelvic" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% else %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-pelvic" name="info-pelvic" data-fill="0" data-word="info-pelvic" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+    <a href="/article/article2">
+        <div class="information-image-container">
+            <div class="infoLinkImg backgroundPelvic">
+                <h3 class="fontInconsolataTitleBigger center-text imgtext">The hypertonic pelvic floor</h3>
+                <h9 class="fontInconsolata200 undercenter-text">What is it?<br>Recent research about pelvic floor muscle tension</h9>
+            </div>
+        </div>
+    </a>
+
+    <div class="inline-image-container">
+        <div class="favorite2">
+            {% if "info-stories" in favorite_words %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-stories" name="info-stories" value="info-stories" data-fill="1" data-word="info-stories" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% else %}
+                <form action="/information" method="post">
+                    <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="info-stories" name="info-stories" data-fill="0" data-word="info-stories" onclick="toggleFill(this)">favorite</span>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+    <a href="/article/article3">
+        <div class="information-image-container">
+            <div class="infoLinkImg backgroundWoman">
+                <h3 class="fontInconsolataTitleBigger center-text imgtext">Stories</h3>
+                <h9 class="fontInconsolata200 undercenter-text">Stories of women who have had increased pelvic floor muscle tension</h9>
+            </div>
+        </div>
+    </a>
+{% endblock %}

@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Article
+{% endblock %}
+
+{% block main %}
+    <div class="article-container marginTop">
+        <div class="space"></div>
+        <div class="textabovecontainer">
+            {% if stress_article %}
+                <div class="abovetextcontainerleft">
+                    <p class="fontInconsolata200blacksmall">https://thevagwhisperer.com/2023/04/25/stress-and-pelvic-floor-tension/</p>
+                </div>
+                <div class="abovetextcontainerright">
+                    <p class="fontInconsolata200blacksmall">Last Updated: 27 december 2023</p>
+                </div>
+            {% endif %}
+            {% if pelvic_article %}
+                <div class="abovetextcontainerleft">
+                    <p class="fontInconsolata200blacksmall">https://www.continence.org.au/news/hypertonic-pelvic-floor</p>
+                </div>
+                <div class="abovetextcontainerright">
+                    <p class="fontInconsolata200blacksmall">13 june 2019</p>
+                </div>
+            {% endif %}
+            {% if stories_article %}
+                <div class="abovetextcontainerleft">
+                    <p class="fontInconsolata200blacksmall">https://www.pelvicpain.org.uk/patient-stories/</p>
+                </div>
+                <div class="abovetextcontainerright">
+                    <p class="fontInconsolata200blacksmall">2024</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="flexbox-first-line-article"></div>
+        <div class="text">
+            <h3 class="domine-articleTitle">{{ article_content['title'] }}</h3>
+            <h3 class="domine-articleUnderTitle">{{ article_content['undertitle'] }}</h3>
+        </div>
+        <div class="flexbox-second-line-article">
+
+        </div>
+        <div class="textcontainer" style="margin-top: 40px;">
+            <div class="intextcontainerLeft">
+                <p class="fontInconsolata200blacksmall">{{ article_content['text1'] | safe }}</p>
+                {% if pelvic_article %}
+                    <p class="fontInconsolata200blacksmall kop">What causes a hypertonic pelvic floor?</p>
+                {% endif %}
+                <p class="fontInconsolata200blacksmall">{{ article_content['text1.1'] | safe }}</p>
+                {% if pelvic_article %} <br><br><br> {% endif %}
+                {% if pelvic_article or stress_article %}
+                    <img class="imgArticleStress" src="{{ article_content['image2'] }}" alt="Afbeelding bij artikel">
+                {% endif %}
+            </div>
+            <div class="intextcontainerRight">
+                {% if stress_article %}
+                    <img class="imgArticleStress" src="{{ article_content['image1'] }}" alt="Afbeelding bij artikel">
+                {% endif %}
+                <div class="textcontainerin">
+                    {% if pelvic_article %}
+                        <img class="imgArticleStress" src="{{ article_content['image1'] }}" alt="Afbeelding bij artikel">
+                        <img class="imgArticleStress" src="{{ article_content['image1.1'] }}" alt="Afbeelding bij artikel">
+                    {% endif %}
+                </div>
+                {% if stress_article %}
+                    <p class="fontInconsolata200blacksmall kop">Four Signs and Symptoms - Overactive Pelvic Floor</p>
+                {% endif %}
+                <p class="fontInconsolata200blacksmall">{{ article_content['text2'] | safe }}</p>
+                {% if pelvic_article %}
+                    <p class="fontInconsolata200blacksmall kop">The What are the signs and symptoms of a hypertonic pelvic floor?</p>
+                    <p class="fontInconsolata200blacksmall">{{ article_content['text3'] | safe }}</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="singletextcontainer">
+            {% if stress_article %}
+                <p class="fontInconsolata200blacksmall kop">The Connection Between Stress and Pelvic Floor Tension</p>
+                <p class="fontInconsolata200blacksmall">{{ article_content['text3'] | safe }}</p>
+            {% endif %}
+            {% if stories_article %}
+                <img class="imgArticleStories" src="{{ article_content['image1'] }}" alt="Afbeelding bij artikel">
+                <h3 class="domine-articleUnderTitle">Story 1</h3>
+                <p class="fontInconsolata200blacksmall kop">After years of countless hospital admissions, appointments, operations, every injection, pill, lotion and potion you can imagine… I relentlessly searched for a treatment for my pelvic pain.</p>
+                <p class="fontInconsolata200blacksmall">{{ article_content['text3'] | safe }}</p>
+            {% endif %}
+            {% if stress_article %}
+                <p class="fontInconsolata200blacksmall kop">Epinephrine and Norepinephrine</p>
+                <p class="fontInconsolata200blacksmall">{{ article_content['text4'] | safe }}</p>
+            {% endif %}
+            {% if pelvic_article %}
+                <img class="imgArticleStress" src="{{ article_content['image3'] }}" alt="Afbeelding bij artikel">
+                <p class="fontInconsolata200blacksmall kop">What to do if you think you or your client has a hypertonic pelvic floor?</p>
+                <p class="fontInconsolata200blacksmall">{{ article_content['text4'] | safe }}</p>
+            {% endif %}
+            {% if stories_article %}
+                <br>
+                <h3 class="domine-articleUnderTitle">Story 2</h3>
+                <p class="fontInconsolata200blacksmall kop">Jane is 44 and lives in Bournemouth. She has suffered from bladder pain for over 16 years.</p>
+                <p class="fontInconsolata200blacksmall">{{ article_content['text4'] | safe }}</p>
+            {% endif %}
+            {% if stress_article %}
+                <p class="fontInconsolata200blacksmall kop">Cortisol</p>
+            {% endif %}
+            {% if stories_article %}
+                <br>
+                <img class="imgArticleStories" src="{{ article_content['image2'] }}" alt="Afbeelding bij artikel">
+                <br>
+                <h3 class="domine-articleUnderTitle">Story 3</h3>
+                <p class="fontInconsolata200blacksmall kop">This is the story of my pelvic pain journey, from utter bewilderment to on-going recovery.</p>
+            {% endif %}
+            <p class="fontInconsolata200blacksmall">{{ article_content['text5'] | safe }}</p>
+            {% if stress_article %}
+                <img class="imgArticleStress" src="{{ article_content['image3'] }}" alt="Afbeelding bij artikel">
+                <p class="fontInconsolata200blacksmall kop">Easing Symptoms of Stress and Pelvic Floor Tension</p>
+            {% endif %}
+            <p class="fontInconsolata200blacksmall">{{ article_content['text6'] | safe }}</p>
+        </div>
+        <div class="flexbox-second-line-article"></div>
+        <div class="singletextcontainer marginTopArticle">
+            {% if stress_article %}
+                <p class="fontInconsolata200blacksmall">- Physiopedia. (n.d.). Impact of stress and cortisol levels on pelvic pain and pelvic stress <br>reflex response.<br>
+                    - Witzeman, K. (2021, August 25). The complex intersection of pelvic pain and mental health<br>in women. Practical Pain Management.<br></p>
+            {% endif %}
+            {% if pelvic_article %}
+                <p class="fontInconsolata200blacksmall">Written by Heba Shaheed - physiotherapist, nutritionist and exercise specialist and co-founder and CEO of The Pelvic Expert thepelvicexpert.com.</p>
+            {% endif %}
+        </div>
+        <div class="space"></div>
+    </div>
+
+{% endblock %}

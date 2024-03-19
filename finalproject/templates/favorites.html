@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Favorites
+{% endblock %}
+
+{% block main %}
+<div class="marginTop"></div>
+<!-- Information favorites -->
+    {% if favWords is true %}
+        {% if info is true %}
+            <div class="text">
+                <h3 class="fontInconsolataTitle">Information</h3>
+            </div>
+            {% for favorite_words in favorite_words %}
+                {% if "info-stress" in favorite_words %}
+                    <a href="/article/article1">
+                        <div class="information-image-container infoFavoMargin">
+                            <div class="infoLinkImg backgroundStress">
+                                <h3 class="fontInconsolataTitle center-text imgtext fontweight">Stress</h3>
+                                <h9 class="fontInconsolata200 undercenter-text">What does stress have to do with pelvic floor muscle tension?<br>What is Stress?</h9>
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            {% for favorite_words in favorite_words %}
+                {% if "info-pelvic" in favorite_words %}
+                    <a href="/article/article2">
+                        <div class="information-image-container infoFavoMargin">
+                            <div class="infoLinkImg backgroundPelvic">
+                                <h3 class="fontInconsolataTitle center-text imgtext fontweight">Pelvic floor muscle tension</h3>
+                                <h9 class="fontInconsolata200 undercenter-text">What is it?<br>Recent research about pelvic floor muscle tension</h9>
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            {% for favorite_words in favorite_words %}
+                {% if "info-stories" in favorite_words %}
+                    <a href="/article/article3">
+                        <div class="information-image-container infoFavoMargin">
+                            <div class="infoLinkImg backgroundWoman">
+                                <h3 class="fontInconsolataTitle center-text imgtext fontweight">Stories</h3>
+                                <h9 class="fontInconsolata200 undercenter-text">Stories of women who have had increased pelvic floor muscle tension</h9>
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+<!-- Yoga Exercise Video's -->
+        {% if yoga is true %}
+            <div class="text">
+                <h3 class="fontInconsolataTitle">Yoga</h3>
+            </div>
+            <div class="inline-image-container1">
+                {% for favorite_words in favorite_words %}
+                    {% if "yoga-1" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/W23bSJzEhzE?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga1" onmouseover="show('yoga1'); backgroundIn('yogavideo1')" onmouseout="hide('yoga1'); backgroundOut('yogavideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="yogavideo1" src="../static/yoga1.png" alt="yoga video 1" onmouseover="show('yoga1')" onmouseout="hide('yoga1'); out('yogavideo1')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">HYPERTONIC PELVIC FLOOR YOGA EXERCISES</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "yoga-2" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/Jvr__DjtNx4?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga2" onmouseover="show('yoga2'); backgroundIn('yogavideo2')" onmouseout="hide('yoga2'); backgroundOut('yogavideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="yogavideo2" src="../static/yoga2.png" alt="yoga video 2" onmouseover="show('yoga2')" onmouseout="hide('yoga2'); out('yogavideo2')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Yoga to Relax Pelvic Floor Tension</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "yoga-3" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/un8YCM9DAkM?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga3" onmouseover="show('yoga3'); backgroundIn('yogavideo3')" onmouseout="hide('yoga3'); backgroundOut('yogavideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="yogavideo3" src="../static/yoga3.png" alt="yoga video 3" onmouseover="show('yoga3')" onmouseout="hide('yoga3'); out('yogavideo3')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">12-Minute Pelvic Floor Relaxation</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+<!-- Breathing Exercise Video's -->
+        {% if breathing is true %}
+            <div class="text">
+                <h3 class="fontInconsolataTitle">Breathing Exercises</h3>
+            </div>
+            <div class="inline-image-container1">
+                {% for favorite_words in favorite_words %}
+                    {% if "Breathing1" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/PJprXsSvdag?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing1" onmouseover="show('breathing1'); backgroundIn('breathingvideo1')" onmouseout="hide('breathing1'); backgroundOut('breathingvideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="breathingvideo1" src="../static/breathing1.png" alt="breathing video 1" onmouseover="show('breathing1')" onmouseout="hide('breathing1'); out('breathingvideo1')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Pelvic Floor Breathing Exercises</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Breathing2" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/3tInmeHlIoA?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing2" onmouseover="show('breathing2'); backgroundIn('breathingvideo2')" onmouseout="hide('breathing2'); backgroundOut('breathingvideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="breathingvideo2" src="../static/breathing2.png" alt="breathing video 2" onmouseover="show('breathing2')" onmouseout="hide('breathing2'); out('breathingvideo2')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Pelvic Floor Pain? Here's How To Relax</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Breathing3" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/3Bd3bWTH4zk&t=17s?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing3" onmouseover="show('breathing3'); backgroundIn('breathingvideo3')" onmouseout="hide('breathing3'); backgroundOut('breathingvideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="breathingvideo3" src="../static/breathing3.png" alt="breathing video 3" onmouseover="show('breathing3')" onmouseout="hide('breathing3'); out('breathingvideo3')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Breathe in Pelvic Floor</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+<!-- Meditation Exercise Video's -->
+        {% if meditating is true %}
+            <div class="text">
+                <h3 class="fontInconsolataTitle">Meditation</h3>
+            </div>
+            <div class="inline-image-container1">
+                {% for favorite_words in favorite_words %}
+                    {% if "Medetating1" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/dAgeYOmhz_Y?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation1" onmouseover="show('meditation1'); backgroundIn('meditationvideo1')" onmouseout="hide('meditation1'); backgroundOut('meditationvideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="meditationvideo1" src="../static/meditation1.png" alt="meditating video 1" onmouseover="show('meditation1')" onmouseout="hide('meditation1'); out('meditationvideo1')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Meditation Pelvic Pain: Body Scan</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Medetating2" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/7BySMrUlh1A?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation2" onmouseover="show('meditation2'); backgroundIn('meditationvideo2')" onmouseout="hide('meditation2'); backgroundOut('meditationvideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="meditationvideo2" src="../static/meditation2.png" alt="breathing video 2" onmouseover="show('meditation2')" onmouseout="hide('meditation2'); out('meditationvideo2')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Meditation For Pelvic Pain</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Medetating3" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/ld38mcpK-Tc?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation3" onmouseover="show('meditation3'); backgroundIn('meditationvideo3')" onmouseout="hide('meditation3'); backgroundOut('meditationvideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="meditationvideo3" src="../static/meditation3.png" alt="meditation video 3" onmouseover="show('meditation3')" onmouseout="hide('meditation3'); out('meditationvideo3')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">10-Minute Breath Meditation Pelvic</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+
+<!-- Fysio Exercise Video's -->
+        {% if fysio is true %}
+            <div class="text">
+                <h3 class="fontInconsolataTitle">Fysio Exercises</h3>
+            </div>
+            <div class="inline-image-container1">
+                {% for favorite_words in favorite_words %}
+                    {% if "Fysio1" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/37a_CXKEj5M?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio1" onmouseover="show('fysio1'); backgroundIn('fysiovideo1')" onmouseout="hide('fysio1'); backgroundOut('fysiovideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="fysiovideo1" src="../static/fysio1.png" alt="fysio video 1" onmouseover="show('fysio1')" onmouseout="hide('fysio1'); out('fysiovideo1')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Pelvic Floor Training</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Fysio2" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/WuieQfE_ajI?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio2" onmouseover="show('fysio2'); backgroundIn('fysiovideo2')" onmouseout="hide('fysio2'); backgroundOut('fysiovideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="fysiovideo2" src="../static/fysio2.png" alt="fysio video 2" onmouseover="show('fysio2')" onmouseout="hide('fysio2'); out('fysiovideo2')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Pelvic Floor Exercises:Common Questions</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if "Fysio3" in favorite_words %}
+                        <div class="inline-image-container">
+                            <a href="/videos?video=https://www.youtube.com/embed/Auca88tmUu8?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio3" onmouseover="show('fysio3'); backgroundIn('fysiovideo3')" onmouseout="hide('fysio3'); backgroundOut('fysiovideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                                <img class="videoLinkImg iconcollorpink" id="fysiovideo3" src="../static/fysio3.png" alt="fysio video 3" onmouseover="show('fysio3')" onmouseout="hide('fysio3'); out('fysiovideo3')"></a>
+                            <div class="textVideo">
+                                <h8 class="fontInconsolata200">Pelvic Relaxation Exercises</h8>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% else %}
+        <div class="text infoFavoMargin">
+            <h8 class="fontInconsolata200">You don't have any favorites yet!</h8>
+        </div>
+        <div class="inline-image-container">
+            <video class="video" id="noFavContentVideo" controls autoplay>
+                <source src="../static/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    {% endif %}
+{% endblock %}

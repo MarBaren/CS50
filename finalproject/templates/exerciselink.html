@@ -1,0 +1,262 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Exerciselink
+{% endblock %}
+
+{% block main %}
+<!-- Yoga Exercise Video's -->
+    {% if yoga_link %}
+        <div class="text">
+            <h3 class="fontInconsolataTitle">Yoga</h3>
+        </div>
+        <div class="inline-image-container1">
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/W23bSJzEhzE?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga1" onmouseover="show('yoga1'); backgroundIn('yogavideo1')" onmouseout="hide('yoga1'); backgroundOut('yogavideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="yogavideo1" src="../static/yoga1.png" alt="yoga video 1" onmouseover="show('yoga1')" onmouseout="hide('yoga1'); out('yogavideo1')"></a>
+                <div class="favoriteVideo">
+                    {% if "yoga-1" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-1" name="yoga-1" value="yoga-1" data-fill="1" data-word="yoga-1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-1" name="yoga-1" data-fill="0" data-word="yoga-1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">HYPERTONIC PELVIC FLOOR YOGA EXERCISES</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/Jvr__DjtNx4?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga2" onmouseover="show('yoga2'); backgroundIn('yogavideo2')" onmouseout="hide('yoga2'); backgroundOut('yogavideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="yogavideo2" src="../static/yoga2.png" alt="yoga video 2" onmouseover="show('yoga2')" onmouseout="hide('yoga2'); out('yogavideo2')"></a>
+                <div class="favoriteVideo">
+                    {% if "yoga-2" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-2" name="yoga-2" value="yoga-2" data-fill="1" data-word="yoga-2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-2" name="yoga-2" data-fill="0" data-word="yoga-2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Yoga to Relax Pelvic Floor Tension</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/un8YCM9DAkM?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="yoga3" onmouseover="show('yoga3'); backgroundIn('yogavideo3')" onmouseout="hide('yoga3'); backgroundOut('yogavideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="yogavideo3" src="../static/yoga3.png" alt="yoga video 3" onmouseover="show('yoga3')" onmouseout="hide('yoga3'); out('yogavideo3')"></a>
+                <div class="favoriteVideo">
+                    {% if "yoga-3" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-3" name="yoga-3" value="yoga-3" data-fill="1" data-word="yoga-3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="yoga-3" name="yoga-3" data-fill="0" data-word="yoga-3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">12-Minute Pelvic Floor Relaxation</h8>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+<!-- Breathing Exercise Video's -->
+    {% if breathing_link %}
+        <div class="text">
+            <h3 class="fontInconsolataTitle">Breathing Exercises</h3>
+        </div>
+        <div class="inline-image-container1">
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/PJprXsSvdag?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing1" onmouseover="show('breathing1'); backgroundIn('breathingvideo1')" onmouseout="hide('breathing1'); backgroundOut('breathingvideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="breathingvideo1" src="../static/breathing1.png" alt="breathing video 1" onmouseover="show('breathing1')" onmouseout="hide('breathing1'); out('breathingvideo1')"></a>
+                <div class="favoriteVideo">
+                    {% if "Breathing1" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing1" name="Breathing1" value="Breathing1" data-fill="1" data-word="Breathing1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing1" name="Breathing1" data-fill="0" data-word="Breathing1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Pelvic Floor Breathing Exercises</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/3tInmeHlIoA?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing2" onmouseover="show('breathing2'); backgroundIn('breathingvideo2')" onmouseout="hide('breathing2'); backgroundOut('breathingvideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="breathingvideo2" src="../static/breathing2.png" alt="breathing video 2" onmouseover="show('breathing2')" onmouseout="hide('breathing2'); out('breathingvideo2')"></a>
+                <div class="favoriteVideo">
+                    {% if "Breathing2" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing2" name="Breathing2" value="Breathing2" data-fill="1" data-word="Breathing2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing2" name="Breathing2" data-fill="0" data-word="Breathing2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Pelvic Floor Pain? Here's How To Relax</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/3Bd3bWTH4zk?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="breathing3" onmouseover="show('breathing3'); backgroundIn('breathingvideo3')" onmouseout="hide('breathing3'); backgroundOut('breathingvideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="breathingvideo3" src="../static/breathing3.png" alt="breathing video 3" onmouseover="show('breathing3')" onmouseout="hide('breathing3'); out('breathingvideo3')"></a>
+                <div class="favoriteVideo">
+                    {% if "Breathing3" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing3" name="Breathing3" value="Breathing3" data-fill="1" data-word="Breathing3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Breathing3" name="Breathing3" data-fill="0" data-word="Breathing3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Breathe in Pelvic Floor</h8>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+
+<!-- Meditation Exercise Video's -->
+    {% if meditation_link %}
+        <div class="text">
+            <h3 class="fontInconsolataTitle">Meditation</h3>
+        </div>
+        <div class="inline-image-container1">
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/dAgeYOmhz_Y?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation1" onmouseover="show('meditation1'); backgroundIn('meditationvideo1')" onmouseout="hide('meditation1'); backgroundOut('meditationvideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="meditationvideo1" src="../static/meditation1.png" alt="meditating video 1" onmouseover="show('meditation1')" onmouseout="hide('meditation1'); out('meditationvideo1')"></a>
+                <div class="favoriteVideo">
+                    {% if "Medetating1" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Medetating1" name="Medetating1" value="Medetating1" data-fill="1" data-word="Medetating1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Medetating1" name="Medetating1" data-fill="0" data-word="Medetating1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Meditation Pelvic Pain: Body Scan</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/7BySMrUlh1A?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation2" onmouseover="show('meditation2'); backgroundIn('meditationvideo2')" onmouseout="hide('meditation2'); backgroundOut('meditationvideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="meditationvideo2" src="../static/meditation2.png" alt="breathing video 2" onmouseover="show('meditation2')" onmouseout="hide('meditation2'); out('meditationvideo2')"></a>
+                <div class="favoriteVideo">
+                    {% if "Meditating2" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Meditating2" name="Meditating2" value="Meditating2" data-fill="1" data-word="Meditating2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Meditating2" name="Meditating2" data-fill="0" data-word="Meditating2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Meditation For Pelvic Pain</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/ld38mcpK-Tc?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="meditation3" onmouseover="show('meditation3'); backgroundIn('meditationvideo3')" onmouseout="hide('meditation3'); backgroundOut('meditationvideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="meditationvideo3" src="../static/meditation3.png" alt="meditation video 3" onmouseover="show('meditation3')" onmouseout="hide('meditation3'); out('meditationvideo3')"></a>
+                <div class="favoriteVideo">
+                    {% if "Meditating3" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Meditating3" name="Meditating3" value="Meditating3" data-fill="1" data-word="Meditating3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Meditating3" name="Meditating3" data-fill="0" data-word="Meditating3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">10-Minute Breath Meditation Pelvic</h8>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+
+<!-- Fysio Exercise Video's -->
+    {% if fysio_link %}
+        <div class="text">
+            <h3 class="fontInconsolataTitle">Fysio Exercises</h3>
+        </div>
+        <div class="inline-image-container1">
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/37a_CXKEj5M?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio1" onmouseover="show('fysio1'); backgroundIn('fysiovideo1')" onmouseout="hide('fysio1'); backgroundOut('fysiovideo1')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="fysiovideo1" src="../static/fysio1.png" alt="fysio video 1" onmouseover="show('fysio1')" onmouseout="hide('fysio1'); out('fysiovideo1')"></a>
+                <div class="favoriteVideo">
+                    {% if "Fysio1" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio1" name="Fysio1" value="Fysio1" data-fill="1" data-word="Fysio1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio1" name="Fysio1" data-fill="0" data-word="Fysio1" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Pelvic Floor Training</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/WuieQfE_ajI?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio2" onmouseover="show('fysio2'); backgroundIn('fysiovideo2')" onmouseout="hide('fysio2'); backgroundOut('fysiovideo2')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="fysiovideo2" src="../static/fysio2.png" alt="fysio video 2" onmouseover="show('fysio2')" onmouseout="hide('fysio2'); out('fysiovideo2')"></a>
+                <div class="favoriteVideo">
+                    {% if "Fysio2" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio2" name="Fysio2" value="Fysio2" data-fill="1" data-word="Fysio2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio2" name="Fysio2" data-fill="0" data-word="Fysio2" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Pelvic Floor Exercises:Common Questions</h8>
+                </div>
+            </div>
+            <div class="inline-image-container">
+                <a href="/videos?video=https://www.youtube.com/embed/Auca88tmUu8?autoplay=1"><span class="material-symbols-outlined iconcollorpink play" id="fysio3" onmouseover="show('fysio3'); backgroundIn('fysiovideo3')" onmouseout="hide('fysio3'); backgroundOut('fysiovideo3')" style="font-size: 55px; font-variation-settings: 'OPSZ' 48, 'wght' 600; display: none;">play_arrow</span>
+                    <img class="videoLinkImg iconcollorpink" id="fysiovideo3" src="../static/fysio3.png" alt="fysio video 3" onmouseover="show('fysio3')" onmouseout="hide('fysio3'); out('fysiovideo3')"></a>
+                <div class="favoriteVideo">
+                    {% if "Fysio3" in favorite_words %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio3" name="Fysio3" value="Fysio3" data-fill="1" data-word="Fysio3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% else %}
+                        <form action="/exercises" method="post">
+                            <span class="material-symbols-outlined iconcollorpink" style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;" id="Fysio3" name="Fysio3" data-fill="0" data-word="Fysio3" onclick="toggleFill(this)">favorite</span>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="textVideo">
+                    <h8 class="fontInconsolata200">Pelvic Relaxation Exercises</h8>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div class="flex-container-login">
+        <div class="flex-container-loginButton">
+            <form action="/register" method="post">
+                <div>
+                    <input autocomplete="off" autofocus id="username" name="username" placeholder="Username" type="text">
+                </div>
+                <div>
+                    <input autocomplete="off" autofocus id="email" name="email" placeholder="Email" type="text">
+                </div>
+                <div>
+                    <input id="password" name="password" placeholder="Password" type="password">
+                </div>
+                <div>
+                    <input id="confirmation" name="confirmation" placeholder="Repeat password" type="password">
+                </div>
+                <div class="buttons">
+                    <button class="buttonLogin" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h3 class="fontInconsolataTitle">Make your profile</h3>
+            <h8 class="fontInconsolata200">Stay up to date on new research <br> about pelvic floor muscle tension <br> and track your progress</h8>
+        </div>
+    </div>
+    <div class="flex-container-link">
+        <div>
+            <li><a class="current-link" href="/register">Register</a></li>
+        </div>
+        <div>
+            <li><a class="other-link" href="/login">Login</a></li>
+        </div>
+    </div>
+    <div>
+        <div class="flexbox-currentlink-left"></div>
+        <div></div>
+    </div>
+{% endblock %}

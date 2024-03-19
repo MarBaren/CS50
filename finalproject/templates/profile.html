@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <div class="flex-container-index marginTop" id="blurr">
+        <div class="image-container-profilepicture">
+            {% if profile_pic %}
+                <div class="smallLinkImg1 buttonschange">
+                    <img src="{{ url_for('static', filename=profile_pic) }}" alt="profilepic" class="smallLinkImg1">
+                    <button class="buttonchange bottommargin" type="change" onclick="show('changeprofilepic'); blurr('blurr')">Change</button>
+                </div>
+            {% else %}
+                <div class="smallLinkImg1 backgroundProfilePic buttonschange">
+                    <button class="buttonchange bottommargin" type="change" onclick="show('changeprofilepic'); blurr('blurr')">Change</button>
+                </div>
+            {% endif %}
+        </div>
+        <div class="profileinfo-container">
+            {% for result in result %}
+                <h3 class="fontInconsolataTitleBlack text"> Hi, {{ result.username }}! </h3>
+                <div class="flexbox">
+                    <div class="profileinfotext">
+                        <h3 class="fontInconsolata200black">Email: {{ result.email }}</h3>
+                    </div>
+                    <div class="flex-end">
+                        <button class="buttonchange" type="change" onclick="window.location.href='/change-email'">Change</button>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="flexbox2" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;">
+                <span class="material-symbols-outlined iconcollorpink">
+                    favorite
+                </span>
+                <a href="/favorites">
+                    <h3 class="fontInconsolata200black">Favorites</h3>
+                </a>
+            </div>
+            <div class="buttons">
+                <button class="buttonChangePassword" type="changePassword" onclick="window.location.href='/changepassword'">Change Password</button>
+            </div>
+        </div>
+    </div>
+    <div class="changeprofilepic" id="changeprofilepic">
+        <form enctype="multipart/form-data" method="post" class="buttonschange">
+            <span class="closebtn2" onclick="hide('changeprofilepic'); notblurr('blurr')">&times;</span>
+            <input class="inputchangeprofile" type="file" name="profilepic" id="profilepic">
+            <button class="buttonchange bottommargin" type="submit" value="Upload">Change</button>
+        </form>
+    </div>
+{% endblock %}
